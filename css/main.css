@@ -106,59 +106,63 @@ textarea {
 .Nunito-S {font-family: 'Nunito Sans', sans-serif;}
 
 
-.color1 {color: rgba(19, 26, 43, 1);}/* =================================COLORS====== */
-.color2 {color: rgba(126, 158, 193, 1)}
-.color3 {color: rgba(150, 147, 155, 1)}
-.color4 {color: rgba(255, 67, 96, 1)}
-.color5 {color: rgba(255, 255, 255, 1)}
+.color-CreteDeDindon {color: rgba(255, 67, 96, 1);}/* =================================COLORS====== */
+.color-BleuCanard {color: rgba(27, 47, 51, 1)}
+.color-Moineau {color: rgba(129, 108, 97, 1)}
+.color-Kaki {color: rgba(87, 90, 75, 1)}
+.color-Citrouille {color: rgba(255, 168, 36, 1)}
+.color-LightGrey {color: #e9ecef}
 
-.bg-color1 {background-color: rgba(27, 47, 51, 1);}/* =================================BACKGROUND-COLORS====== */
-.bg-color2 {background-color: rgba(126, 158, 193, 1)}
-.bg-color3 {background-color: rgba(150, 147, 155, 1)}
-.bg-color4 {background-color: rgba(255, 67, 96, 1)}
-.bg-color5 {background-color: rgba(255, 255, 255, 1)}
-
+.bgColor-CreteDeDindon {background-color: rgba(255, 67, 96, 1);}/* =================================BACKGROUND-COLORS====== */
+.bgColor-BleuCanard {background-color: rgba(27, 47, 51, 1)}
+.bgColor-Moineau {background-color: rgba(129, 108, 97, 1)}
+.bgColor-Kaki {background-color: rgba(87, 90, 75, 1)}
+.bgColor-Citrouille {background-color: rgba(255, 168, 36, 1)}
+.bgColor-LightGrey {background-color: #e9ecef}
 
 /* =============================================================GLOBAL CLASSES END============================================================= */
 
+body {background-color: rgba(129, 108, 97, 1)};
+
+header img{
+    width: 60px!important;
+}
 .custom-toggler.navbar-toggler {
-    border-color: rgb(255,102,203);
+    border-color: rgb(255, 168, 36);
 }
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 168, 36, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .btn-primary {
-    color: rgba(219, 189, 21, 1);
-    background-color: rgba(5, 140, 66, 1);;
-    border-color: rgba(219, 189, 21, 1);
+    color: rgba(87, 90, 75, 1);
+    background-color: rgba(255, 67, 96, 1);
+    border-color: rgba(87, 90, 75, 1);
 }
 
-h1, p {
-    color: rgba(219, 189, 21, 1);
+p {
+    color: rgba(27, 47, 51, 1);
 }
 
-h5 {
-   color: rgba(27, 47, 51, 1); 
+h2, h5, a {
+    color: rgba(255, 168, 36, 1);
+}
+
+h1 {
+   color: rgba(255, 67, 96, 1);
 }
 
 li {
     list-style: none;
 }
 
+hr {
+    border-top: 1px solid rgba(129, 108, 97, 1);
+}
+
 pre h1{
     margin: 0;
 }
-
-
-header div {
-    height: 3.5em;
-}
-
-header img {
-    height: 100%;
-}
-
 
 .jumbotron  h1 {
     font-size: 1.6em;
@@ -174,13 +178,23 @@ header img {
     background-position-y: -4em;
 }
 
-.container {
-    background-color: rgba(5, 140, 66, .8);
+.card-img-top{
+    width: 50%;
 }
 
+.text-muted {
+    color: rgba(255, 168, 36, 1)!important;
+ }
 
+a:hover {
+    color: rgba(255, 67, 96, 1); 
+}
 
-
+@media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }
 
 
 /* ==========================================================================
